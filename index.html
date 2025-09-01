@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Events Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>User Registration Form</h2>
+    <form id="registerForm">
+      <!-- Name -->
+      <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label>Gender:</label>
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <small class="error" id="genderError"></small>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <p id="successMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
